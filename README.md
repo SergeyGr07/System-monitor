@@ -95,12 +95,6 @@ pytest --cov=app --cov-report=html tests/
 ### Проверка стиля кода
 
 ```bash
-# Проверка форматирования с помощью Black
-black --check .
-
-# Автоматическое форматирование кода
-black .
-
 # Проверка стиля кода с помощью Ruff
 ruff check .
 

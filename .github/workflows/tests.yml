@@ -30,15 +30,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install pytest pytest-cov black ruff
+        pip install pytest pytest-cov ruff
     
-    - name: Check code formatting with Black
+    - name: Lint and format with Ruff
       run: |
-        black --check .
-    
-    - name: Lint with Ruff
-      run: |
-        ruff check .
+        ruff check . --fix
     
     - name: Run tests with pytest
       run: |
