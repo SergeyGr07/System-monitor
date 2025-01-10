@@ -1,5 +1,6 @@
-from app import create_app
 import webview
+
+from app import create_app
 
 app = create_app()
 

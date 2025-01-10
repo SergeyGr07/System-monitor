@@ -1,8 +1,8 @@
-from flask import Blueprint, render_template, jsonify
 import psutil
-from app.models import SystemMetrics
-from app import db
+from flask import Blueprint, jsonify, render_template
 
+from app import db
+from app.models import SystemMetrics
 
 main = Blueprint("main", __name__)
 

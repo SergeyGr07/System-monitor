@@ -7,3 +7,31 @@ extend-exclude = '''
 # in the root of the project.
 ^/venv/
 ''' 
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+# Правила для проверки
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+]
+ignore = []
+
+exclude = [
+    ".git",
+    ".ruff_cache",
+    ".venv",
+    "venv",
+    "__pycache__",
+    "build",
+    "dist"
+]
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"] 

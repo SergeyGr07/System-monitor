@@ -1,5 +1,6 @@
-from app.models import SystemMetrics
 from datetime import datetime
+
+from app.models import SystemMetrics
 
 
 def test_new_metrics(app):
